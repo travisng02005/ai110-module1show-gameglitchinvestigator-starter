@@ -26,18 +26,21 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The games purpose is to guess the number depending on the level of difficulty using the hints given to arrive to the correct answer within a given amount of guesses.
 - [ ] Detail which bugs you found.
+The bugs I found was the reset game button not working, the hints pointing the player into the wrong direction, and lastly the game allowing the player to enter guesses outside of the range given.
 - [ ] Explain what fixes you applied.
+The fixes I applied was ensuring that using the reset game button resets that website state, flipping the hints so that they are now pointing to the right direction, and lastly limiting the range that the player can enter a number by not allowing numbers outside of the given range.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters 30
+2. Game returns "Go higher!"
+3. User enters a guess of 97 → "Too High"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -48,7 +51,15 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
 ```
+========================================================================================== test session starts ==========================================================================================
+platform win32 -- Python 3.13.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\Travis\Documents\VSCode\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.14.0
+collected 5 items                                                                                                                                                                                        
 
+tests\test_game_logic.py .....                                                                                                                                                                     [100%]
+
+=========================================================================================== 5 passed in 0.02s ===========================================================================================
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]

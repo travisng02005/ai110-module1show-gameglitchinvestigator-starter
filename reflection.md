@@ -47,12 +47,15 @@ AI helped me design the pytest that I ran with the fixes that we implemented. Th
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+Think of a Streamlit app as a movie that starts from the beginning every time you interact with it.
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+One habit from this project that I will reuse in the future is using pytests as well as manually testing the code to ensure that all of it works properly.
 - What is one thing you would do differently next time you work with AI on a coding task?
+I will definitely monitor the AI even closer to ensure that no errors like the one that I faced happens when making changes to the code.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+This project changed how I think about AI generated code by showing me first hand how AI can definitely mess up and that it is not perfect by any means and requires careful monitoring to ensure that it works. This made me believe that AI will definitely not take peoples jobs and that it is something that is not flawless.
