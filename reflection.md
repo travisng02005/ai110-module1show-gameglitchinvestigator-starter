@@ -14,9 +14,10 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+|   54  | Go HIGHER         | Go LOWER        | n/a                    |
+|   100 | Go LOWER          | Go HIGHER       | n/a                    |
+|  New  | Reset Game        | Stays the same  | n/a                    |
+|  Game |                   |                 |
 
 ---
 
@@ -24,8 +25,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+- Give one example of an AI suggestion you did not accept as written (including what the AI suggested, why you rejected or changed it, and how you verified your version). It does not have to be a suggestion that was wrong: over-engineered, out of scope, harder to read, or a poor fit for this codebase all count.
 
+I used AI to help me search and identify any possible errors that I might've missed. I also used AI to help me debug my code whenever I ran into an error. AI suggested that the New Game handler also resets status to "playing" and clears history, fixing the New Game issue that I was facing. I verified the code by closely monitoring what it was implementing as well as running pytests to make sure that all of the tests were running.
 ---
 
 ## 3. Debugging and testing your fixes
@@ -35,6 +37,7 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+First I ensured that the program passed the pytest, then I went in on streamlit to ensure that the program functioned as intended. The pytest showed that although it ran smoothly, the logic such as the inverted hints was still prevalent. AI helped me understand why my test was failing and what I was missing in order to make it run.
 ---
 
 ## 4. What did you learn about Streamlit and state?
