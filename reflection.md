@@ -44,6 +44,7 @@ First I ensured that the program passed the pytest, then I went in on streamlit 
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit "reruns" implements changes to the app without having to save and rerun the program.
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -52,3 +53,5 @@ First I ensured that the program passed the pytest, then I went in on streamlit 
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I will continue to use the AI agent to help identify bugs or inconsistent logic within the code helped with debugging. One thing that I could do differently the next time I work with AI on a coding task is to trust it more as I am not used to having AI incorporated in my workflow. This project changed the way I think about AI generated code as it shows that AI still requires a bit of hand holding to effectively work.

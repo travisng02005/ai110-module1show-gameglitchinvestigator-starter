@@ -29,15 +29,18 @@ It wrote the code, ran away, and now the game is unplayable.
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
 
+The game's purpose is to make the player guess a number from a given range within a given amount of attempts navigating with the hints telling if the number is smaller or larger than the current guest. The bugs I found were that the hints given were flipped meaning it would tell you that the number is larger even though you needed to go smaller, and the other bug is that the New Game function was not working properly. The fixes I applied was to correct the text outputted based off of the guess in relation to the secret answer. The New Game handler also now resets status to "playing" and clears history in order to correctly restart the game.
+
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters 40
+2. Game returns "Go HIGHER!"
+3. User enters 70
+4. Game returns "Go HIGHER!"
+5. Score updates correctly after each guess
+6. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
